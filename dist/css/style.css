@@ -1,0 +1,198 @@
+._container {
+  max-width: 1215px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 10px;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+*:disabled {
+  cursor: not-allowed;
+}
+
+aside,
+nav,
+footer,
+header,
+section {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: 100%;
+  color: #000000;
+  background: #fff;
+  overflow-x: hidden;
+  -webkit-transition: color 0.3s, background-color 0.3s;
+  transition: color 0.3s, background-color 0.3s;
+  /* Optional: You can also hide the track if you want */
+}
+
+html ::-webkit-scrollbar,
+body ::-webkit-scrollbar {
+  width: none;
+  /* Set a small width to hide the thumb */
+  display: none;
+}
+
+html ::-webkit-scrollbar-thumb,
+body ::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  /* Set the thumb color to transparent */
+}
+
+html ::-webkit-scrollbar-track,
+body ::-webkit-scrollbar-track {
+  background-color: transparent;
+  /* Set the track color to transparent */
+}
+
+body {
+  font-size: 16px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+}
+
+body._lock {
+  overflow: hidden;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+input {
+  line-height: 40px;
+  font-size: 16px;
+  border-radius: 37px;
+  background: rgb(217, 217, 217);
+  width: 340px;
+  height: 51px;
+  padding: 5px 18px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.btn {
+  display: table;
+  cursor: pointer;
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  border-radius: 37px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 36px;
+  letter-spacing: 0px;
+  text-align: center;
+  padding: 8px 36px;
+  background: rgb(42, 42, 42);
+  color: rgb(255, 255, 255);
+}
+
+input,
+button,
+textarea {
+  font-family: "Nunito", sans-serif;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+a,
+a:visited,
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+@media (max-width: 1227px) {
+  ._container {
+    max-width: 970px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  ._container {
+    max-width: 800px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  ._container {
+    max-width: none;
+  }
+}
+
+@media (max-width: 479.98px) {
+  ._container {
+    padding: 0 18px;
+  }
+}

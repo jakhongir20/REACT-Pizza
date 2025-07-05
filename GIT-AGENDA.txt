@@ -1,0 +1,26 @@
+# Git commands
+
+<!-- git add -->
+git add . - uzgarishlarni qoshish
+
+<!-- git commit -->
+git commit -m "change header language" - uzgarishlarni commit qilish
+
+<!-- git push -->
+git push origin main - commit qilingan uzgarishlarni push qilish, ya'ni githubga qayta joylash
+
+
+
+
+<!-- git pull -->
+
+git pull origin main - barcha o'zgarishlarni pull qilib olish githubdan
+
+Eslatma: git pull qilishda changelar commit qilinmagan bolsa oldin commit qilib keyin pull qilinadi
+
+
+
+
+
+
+

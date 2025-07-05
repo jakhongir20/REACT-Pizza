@@ -1,0 +1,46 @@
+@import 'base/_mixins';
+
+$fontfamily: 'Nunito', sans-serif;
+$minwidth: 360px;
+$mw: 1215;
+$md1: $mw + 12;
+$md2: 991.98;
+$md3: 767.98;
+$md4: 479.98;
+$md5: 399.98;
+
+$color1: #000000;
+$color2: #fe5f00;
+
+$color-gray: #666;
+
+._container {
+  max-width: $mw + px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 10px;
+  @media (max-width: $md1+px) {
+    max-width: 970px;
+  }
+  @media (max-width: $md2+px) {
+    max-width: 800px;
+    // padding: 0 10px;
+  }
+  @media (max-width: $md3+px) {
+    max-width: none;
+  } //padding: 0 10px;
+  @media (max-width: $md4 + px) {
+  }
+}
+
+@import 'base/_ui';
+
+@import 'base/_input';
+@import 'base/_btn';
+@import 'base/_forms';
+
+// Components
+@import 'components/_header';
+// ====================================== MAIN CONTENT ============================================================================
+.wrapper {
+}
