@@ -25,6 +25,7 @@
   }
   &--default {
     background-color: #fffaf4;
+    border-color: transparent !important;
   }
   &--primary {
     background-color: $color2;
@@ -40,6 +41,12 @@
     width: 18px;
     height: 18px;
   }
+  &--small {
+    height: 40px;
+    border-radius: 28px !important;
+    padding: 11px 17px;
+  }
+
   @media (max-width: $md3+px) {
     font-size: 14px;
     padding: 10px;

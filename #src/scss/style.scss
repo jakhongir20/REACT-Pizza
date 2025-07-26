@@ -6,8 +6,8 @@ $mw: 1240;
 $md1: $mw + 10;
 $md2: 991.98;
 $md3: 767.98;
-$md4: 479.98;
-$md5: 399.98;
+$md4: 639.98;
+$md5: 479.98;
 
 $color1: #000000;
 $color2: #fe5f00;
@@ -43,8 +43,19 @@ $color-gray: #666;
 @import 'components/_header';
 @import 'components/_category-bar';
 @import 'components/_filter';
+@import 'components/_product-cards';
 // ====================================== MAIN CONTENT ============================================================================
 .wrapper {
   background-color: #ffffff;
   border-radius: 20px;
+  padding-bottom: 50px;
+}
+.main {
+  gap: 50px;
+  @media (max-width: $md2+px) {
+    gap: 30px;
+  }
+  @media (min-width: $md4+px) {
+    @include flexbox();
+  }
 }

@@ -1,6 +1,8 @@
 .filter {
-  width: 244px;
   padding-bottom: 50px;
+  @media (min-width: $md4+px) {
+    width: 244px;
+  }
   &__title {
     font-size: 22px;
     font-weight: 700;
