@@ -2,8 +2,8 @@
 
 $fontfamily: 'Nunito', sans-serif;
 $minwidth: 360px;
-$mw: 1215;
-$md1: $mw + 12;
+$mw: 1240;
+$md1: $mw + 10;
 $md2: 991.98;
 $md3: 767.98;
 $md4: 479.98;
@@ -18,13 +18,13 @@ $color-gray: #666;
   max-width: $mw + px;
   margin: 0 auto;
   width: 100%;
-  padding: 0 10px;
+  padding: 0 15px;
   @media (max-width: $md1+px) {
     max-width: 970px;
   }
   @media (max-width: $md2+px) {
     max-width: 800px;
-    // padding: 0 10px;
+    padding: 0 10px;
   }
   @media (max-width: $md3+px) {
     max-width: none;
@@ -43,4 +43,6 @@ $color-gray: #666;
 @import 'components/_header';
 // ====================================== MAIN CONTENT ============================================================================
 .wrapper {
+  background-color: #ffffff;
+  border-radius: 20px;
 }

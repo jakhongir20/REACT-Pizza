@@ -1,22 +1,51 @@
 .btn {
-  display: table;
+  display: flex;
+  align-items: center;
+  gap: 8px;
   cursor: pointer;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  border-radius: 37px;
-  font-size: 18px;
-
-  font-weight: 500;
-  line-height: 36px;
-  letter-spacing: 0px;
+  border-radius: 16px;
+  font-size: 16px;
+  font-weight: 600;
   text-align: center;
-  padding: 8px 36px;
-  background: $color-black;
-  color: rgb(255, 255, 255);
-
-  &:hover {
+  padding: 16px;
+  height: 50px;
+  background: #ffffff;
+  color: $color2;
+  border: 1px solid transparent;
+  @include anim(0.3s, 0s);
+  &--outline {
+    border-color: $color2;
+    &:hover {
+      background-color: #fffaf4;
+      border-color: transparent;
+    }
   }
-  &--white {
+  &--default {
+    background-color: #fffaf4;
+  }
+  &--primary {
+    background-color: $color2;
+    color: #ffffff;
+    &:hover {
+      background-color: #fe5f00;
+      background-color: #ffffff;
+      color: $color2;
+    }
+  }
+  img {
+    width: 18px;
+    height: 18px;
+  }
+  @media (max-width: $md3+px) {
+    font-size: 14px;
+    padding: 10px;
+    height: 40px;
+    border-radius: 12px;
+    span {
+      display: none;
+    }
   }
 }

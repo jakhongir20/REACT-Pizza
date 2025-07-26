@@ -4,6 +4,7 @@
   padding: 0px;
   margin: 0px;
   border: 0px;
+  box-sizing: border-box;
 }
 *,
 *::before,
@@ -39,11 +40,10 @@ html,
 body {
   height: 100%;
   margin: 0;
-  padding: 0;
   position: relative;
   width: 100%;
   color: $color1;
-  background: #fff;
+  background: #ffbf9b;
   overflow-x: hidden;
   transition: color 0.3s, background-color 0.3s;
 
@@ -69,6 +69,11 @@ body {
   font-style: normal;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
+  padding: 30px;
+  @media (max-width: $md3+px) {
+    padding: 15px;
+  }
+
   &._lock {
     overflow: hidden;
   }
