@@ -91,8 +91,84 @@
     </div>
   </div>
 </section>
-
-
+    <div class="_container">
+      <aside class="filter">
+  <h2 class="filter__title">Фильтрация</h2>
+  <form class="filter__form" autocomplete="off">
+    <div class="filter__group filter__group--checkboxes">
+      <label class="filter__checkbox-label">
+        <input type="checkbox" class="filter__checkbox" checked>
+        <span class="filter__custom-checkbox"></span>
+        Можно собирать
+      </label>
+      <label class="filter__checkbox-label">
+        <input type="checkbox" class="filter__checkbox">
+        <span class="filter__custom-checkbox"></span>
+        Новинки
+      </label>
+    </div>
+    <div class="filter__divider"></div>
+    <div class="filter__group filter__group--price">
+      <label class="filter__label">Цена от и до:</label>
+      <div class="filter__price-inputs">
+        <input type="number" class="filter__input" min="0" value="0" placeholder="0">
+        <input type="number" class="filter__input" min="0" value="1950" placeholder="1950">
+        <span class="filter__currency">₽</span>
+      </div>
+    </div>
+    <div class="filter__divider"></div>
+    <div class="filter__group filter__group--ingredients">
+      <label class="filter__label">Ингредиенты:</label>
+      <label class="filter__checkbox-label">
+        <input type="checkbox" class="filter__checkbox">
+        <span class="filter__custom-checkbox"></span>
+        Сырный соус
+      </label>
+      <label class="filter__checkbox-label">
+        <input type="checkbox" class="filter__checkbox">
+        <span class="filter__custom-checkbox"></span>
+        Моцарелла
+      </label>
+      <label class="filter__checkbox-label">
+        <input type="checkbox" class="filter__checkbox" checked>
+        <span class="filter__custom-checkbox"></span>
+        Чеснок
+      </label>
+      <label class="filter__checkbox-label">
+        <input type="checkbox" class="filter__checkbox">
+        <span class="filter__custom-checkbox"></span>
+        Солёные огурчики
+      </label>
+      <label class="filter__checkbox-label">
+        <input type="checkbox" class="filter__checkbox">
+        <span class="filter__custom-checkbox"></span>
+        Красный лук
+      </label>
+      <label class="filter__checkbox-label">
+        <input type="checkbox" class="filter__checkbox">
+        <span class="filter__custom-checkbox"></span>
+        Томаты
+      </label>
+      <a href="#" class="filter__show-all">+ Показать всё</a>
+    </div>
+    <div class="filter__divider"></div>
+    <div class="filter__group filter__group--radio">
+      <label class="filter__label">Тип теста:</label>
+      <label class="filter__radio-label">
+        <input type="radio" name="dough" class="filter__radio" checked>
+        <span class="filter__custom-radio"></span>
+        Традиционное
+      </label>
+      <label class="filter__radio-label">
+        <input type="radio" name="dough" class="filter__radio">
+        <span class="filter__custom-radio"></span>
+        Тонкое
+      </label>
+    </div>
+    <button type="submit" class="filter__submit btn btn--primary">Применить</button>
+  </form>
+</aside>
+    </div>
 
   </div>
   <script src="js/script.min.js"></script>

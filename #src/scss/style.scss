@@ -42,6 +42,7 @@ $color-gray: #666;
 // Components
 @import 'components/_header';
 @import 'components/_category-bar';
+@import 'components/_filter';
 // ====================================== MAIN CONTENT ============================================================================
 .wrapper {
   background-color: #ffffff;

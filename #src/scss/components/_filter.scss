@@ -1,0 +1,133 @@
+.filter {
+  width: 244px;
+  padding-bottom: 50px;
+  &__title {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 30px;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  &__divider {
+    height: 1px;
+    background: #f6f6f6;
+    margin: 25px 0;
+    border: none;
+  }
+
+  &__label {
+    font-weight: 600;
+  }
+
+  &__checkbox-label,
+  &__radio-label {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-weight: 400;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+  }
+
+  &__checkbox,
+  &__radio {
+    display: none;
+  }
+
+  &__custom-checkbox,
+  &__custom-radio {
+    width: 24px;
+    height: 24px;
+    border-radius: 8px;
+    border: 2px solid transparent;
+    background: #f1f1f1;
+    display: inline-block;
+    position: relative;
+    flex-shrink: 0;
+    transition: border-color 0.2s, background 0.2s;
+  }
+
+  &__checkbox:checked + &__custom-checkbox {
+    background: #ff6900;
+    border-color: #ff6900;
+  }
+  &__checkbox:checked + &__custom-checkbox:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 7px;
+    top: 3px;
+    width: 6px;
+    height: 11px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+
+  &__custom-radio {
+    border-radius: 50%;
+  }
+  &__radio:checked + &__custom-radio {
+    border-color: #ff6900;
+    background: #ff6900;
+  }
+  &__radio:checked + &__custom-radio:after {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    border-radius: 50%;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+  }
+
+  &__price-inputs {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  &__input {
+    width: 90px;
+    height: 40px;
+    padding: 10px 15px;
+    border: 1px solid #f0f0f0;
+    border-radius: 10px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s;
+  }
+  &__input:focus {
+    border-color: #ff6900;
+  }
+  &__currency {
+    color: #bbbbbb;
+    font-size: 14px;
+    margin-left: -5px;
+  }
+
+  &__show-all {
+    color: #ff6900;
+    text-decoration: none;
+    margin-top: 4px;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 400;
+  }
+
+  &__submit {
+    margin-top: 32px;
+  }
+}

@@ -29,10 +29,11 @@
   &--primary {
     background-color: $color2;
     color: #ffffff;
+    justify-content: center;
     &:hover {
-      background-color: #fe5f00;
       background-color: #ffffff;
       color: $color2;
+      border-color: $color2;
     }
   }
   img {
