@@ -1,0 +1,4 @@
+1. Card button +/-, sobrat, knopkalairini sayqallash, kamchiliklarini qilish
+2. Pagination qilish (1,2,3)
+3. Search focus boganda chiqishi
+4. Desktop - 12 detail qismi
